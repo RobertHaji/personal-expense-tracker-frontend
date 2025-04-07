@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
   let selectedCategory = "";
 
   //base url for balance
-  const balanceBaseUrl = "http://localhost:3000/currentBalance";
+  const balanceBaseUrl =
+    "https://personal-expense-tracker-backend-27c8.onrender.com/currentBalance";
   //base url for expenses
-  const expensesBaseUrl = "http://localhost:3000/expenses";
+  const expensesBaseUrl =
+    "https://personal-expense-tracker-backend-27c8.onrender.com/expenses";
 
   //call get balance to update dom
   getBalance();
