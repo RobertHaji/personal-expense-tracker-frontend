@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="title">Personal Expense Tracker</h1>
+        <h2 class="slogan">Budget Better, Live Smarter!</h2>
+    </header>
+    <div class="top-panel">
+
+    
+    <div class="balance-container">
+        <h2>Current Balance KES: <span id="balance">0.00</span></h2>
+        <form id="top-up">
+            <label for="top-up">KES:</label>
+            <input type="number" id="topup-amount" required>
+            <input class="btn" type="submit" >Top up</button>
+        </form>
+    </div>
+
+    <div class="right-side">
+        <button class="btn" id="reset-button">Reset All</button>
+    </div>
+</div>
+    <!-- My Expense Form -->
+    <div class="input-section">
+        <form id="expense-form">
+            <label for="category-select">Category:</label>
+            <select id="category-select">
+             
+            </select>
+
+            <label for="input-amount">Expense:</label>
+            <input type="number" id="input-amount" required />
+
+        
+            <button type="submit" id="add-button">Add Expense</button>
+        </form>
+    </div>
+
+    <!-- My Expenses Table -->
+    <div class="my-expenses">
+        <h3 class="expenditures">Expenditures</h3>
+        
+            <table id="expense-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-table-body">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total:</strong></td>
+                        <td id="total-amount">KES 0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    
+
+    <script src="./src/index.js"></script>
+<footer class="footer">
+    <p>&copy; 2025 Personal Expense Tracker. All rights reserved.</p>
+</footer>
+</body>
+</html>
